@@ -15,7 +15,7 @@ RUN \
     python3=3.11.11-r0 \
   \
   && curl -J -L -o /tmp/overseerr.tar.gz \
-      "https://github.com/sct/overseerr/archive/v${OVERSEERR_VERSION}.tar.gz" \
+      "https://github.com/sct/overseerr/archive/refs/tags/v${OVERSEERR_VERSION}.tar.gz" \
   && tar zxvf \
       /tmp/overseerr.tar.gz \
       --strip 1 -C /opt \
